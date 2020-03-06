@@ -3,6 +3,7 @@
 #include <time.h>
 #include <Windows.h>
 
+
 char mine[100][100]={""};
 char map[100][100]={"c"};
 
