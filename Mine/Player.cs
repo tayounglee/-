@@ -16,7 +16,7 @@ namespace Study
             this.y = y;
         }
 
-        public override void show()
+        public override void Show()
         {
             Console.SetCursorPosition(x * 2, y);
             Console.Write(shape);
@@ -73,11 +73,11 @@ namespace Study
             return this;
         }
 
-        public int getx() { return x; }
-        public int gety() { return y; }
-        public void setx(int x) { this.x = x; }
-        public void sety(int y) { this.y = y; }
-        public string send()
+        public int Getx() { return x; }
+        public int Gety() { return y; }
+        public void Setx(int x) { this.x = x; }
+        public void Sety(int y) { this.y = y; }
+        public string Send()
         {
             return message;
         }

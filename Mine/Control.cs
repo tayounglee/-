@@ -6,8 +6,8 @@ namespace Study
 {
     abstract class Control
     {
+        public bool[,] test;
 
-
-        public abstract void show();
+        public abstract void Show();
     }
 }

@@ -20,6 +20,9 @@ namespace Study
             Board.x = x;
             Board.y = y;
             mineNum = num;
+
+            test = new bool[y, x];
+
             numMap = new int[y, x];
             mineMap = new bool[y, x];
             open = new bool[y, x];
@@ -76,7 +79,7 @@ namespace Study
             }
             */
         }
-        public override void show()
+        public override void Show()
         {
             Console.SetCursorPosition(0, 0);
             for (int i = 0; i < y; i++)
@@ -86,20 +89,20 @@ namespace Study
                     if (open[i, j])
                     {
                         Console.SetCursorPosition(j * 2, i);
-                        Console.Write(selectShape(numMap[i, j]));
+                        Console.Write(SelectShape(numMap[i, j]));
                     }
                     else { }
                 }
             }
         }
 
-        void printShape(int x, int y)
+        void PrintShape(int x, int y)
         {
             Console.SetCursorPosition(x * 2, y);
-            Console.Write(selectShape(numMap[y, x]));
+            Console.Write(SelectShape(numMap[y, x]));
         }
 
-        string selectShape(int s)
+        string SelectShape(int s)
         {
             string[] shape = {
                 "□","①","②","③","④","⑤","⑥","⑦","⑧"
@@ -124,7 +127,7 @@ namespace Study
             return "■";
         }
 
-        public void invest0(int sy, int sx)
+        public void Invest0(int sy, int sx)
         {
             for (int dx = -1; dx <= 1; dx++)
             {
@@ -141,16 +144,16 @@ namespace Study
                         open[ly, lx] = true;
                         if (numMap[ly, lx] == 0)
                         {
-                            invest0(ly, lx);
+                            Invest0(ly, lx);
 
                         }
-                        printShape(lx, ly);
+                        PrintShape(lx, ly);
                     }
                 }
             }
         }
 
-        public bool investFlag(Player p)
+        public bool InvestFlag(Player p)
         {
             int sum = 0;
             int opened = 0;
@@ -160,10 +163,10 @@ namespace Study
                 {
 
                     if (dx == 0 && dy == 0) continue;
-                    int lx = p.getx() + dx;
-                    int ly = p.gety() + dy;
+                    int lx = p.Getx() + dx;
+                    int ly = p.Gety() + dy;
 
-                    if (availablePoint(lx, ly))
+                    if (AvailablePoint(lx, ly))
                     {
                         if (flag[ly, lx] == true)
                         {
@@ -173,33 +176,33 @@ namespace Study
                     }
                 }
             }
-            if (opened == 8 - numMap[p.gety(), p.getx()])
+            if (opened == 8 - numMap[p.Gety(), p.Getx()])
             {
                 return false;
             }
-            if (sum == numMap[p.gety(), p.getx()])
+            if (sum == numMap[p.Gety(), p.Getx()])
             {
                 for (int dy = -1; dy <= 1; dy++)
                 {
                     for (int dx = -1; dx <= 1; dx++)
                     {
-                        int lx = p.getx() + dx;
-                        int ly = p.gety() + dy;
+                        int lx = p.Getx() + dx;
+                        int ly = p.Gety() + dy;
                         if (dx == 0 && dy == 0) continue;
 
-                        if (availablePoint(lx, ly))
+                        if (AvailablePoint(lx, ly))
                         {
                             if (!flag[ly, lx] && !open[ly, lx])
                             {
                                 open[ly, lx] = true;
                                 Console.SetCursorPosition(lx * 2, ly);
-                                Console.Write(selectShape(numMap[ly, lx]));
+                                Console.Write(SelectShape(numMap[ly, lx]));
                             }
                             else { continue; }
 
                             if (numMap[ly, lx] == 0)
                             {
-                                invest0(ly, lx);
+                                Invest0(ly, lx);
                             }
                             else if (mineMap[ly, lx] == true)
                             {
@@ -225,7 +228,7 @@ namespace Study
             return false;
         }
 
-        public bool winCheck()
+        public bool WinCheck()
         {
             int sum = 0;
             for (int i = 0; i < Board.y; i++)
@@ -243,7 +246,7 @@ namespace Study
             else return false;
         }
 
-        public bool availablePoint(int x, int y)
+        public bool AvailablePoint(int x, int y)
         {
             if (x >= 0 && x < Board.x && y >= 0 && y < Board.y)
             {
@@ -252,13 +255,13 @@ namespace Study
             else return false;
         }
 
-        public bool receive(Player p)
+        public bool Receive(Player p)
         {
             int dx = 0, dy = 0;
             bool move = false;
             Mine mine = new Mine();
 
-            switch (p.send())
+            switch (p.Send())
             {
                 case "left":
                     dx = -1;
@@ -277,22 +280,22 @@ namespace Study
                     move = true;
                     break;
                 case "enter":
-                    if (open[p.gety(), p.getx()] == true && numMap[p.gety(), p.getx()] != 0)
+                    if (open[p.Gety(), p.Getx()] == true && numMap[p.Gety(), p.Getx()] != 0)
                     {
-                        investFlag(p);
+                        InvestFlag(p);
                     }
-                    else if (!flag[p.gety(), p.getx()])
+                    else if (!flag[p.Gety(), p.Getx()])
                     {
-                        open[p.gety(), p.getx()] = true;
-                        printShape(p.getx(), p.gety());
+                        open[p.Gety(), p.Getx()] = true;
+                        PrintShape(p.Getx(), p.Gety());
                     }
                     else { return true; }
 
-                    if (numMap[p.gety(), p.getx()] == 0)
+                    if (numMap[p.Gety(), p.Getx()] == 0)
                     {
-                        invest0(p.gety(), p.getx());
+                        Invest0(p.Gety(), p.Getx());
                     }
-                    else if (numMap[p.gety(), p.getx()] == -1 || lose)
+                    else if (numMap[p.Gety(), p.Getx()] == -1 || lose)
                     {
                         for (int i = 0; i < y; i++)
                         {
@@ -305,7 +308,7 @@ namespace Study
                                 }
                             }
                         }
-                        show();
+                        Show();
                         if(Mine.select == 1)
                         {
                             Console.SetCursorPosition(1, 12);
@@ -333,7 +336,7 @@ namespace Study
                         Console.Clear();
                         return false;
                     }
-                    if (winCheck())
+                    if (WinCheck())
                     {
                         for (int i = 0; i < y; i++)
                         {
@@ -347,7 +350,7 @@ namespace Study
                                 }
                             }
                         }
-                        show();
+                        Show();
                         if (Mine.select == 1)
                         {
                             Console.SetCursorPosition(1, 12);
@@ -378,15 +381,15 @@ namespace Study
                     break;
 
                 case "flag":
-                    if (!open[p.gety(), p.getx()])
-                        switch (flag[p.gety(), p.getx()])
+                    if (!open[p.Gety(), p.Getx()])
+                        switch (flag[p.Gety(), p.Getx()])
                         {
                             case true:
-                                flag[p.gety(), p.getx()] = false;
+                                flag[p.Gety(), p.Getx()] = false;
                                 flagnum--;
                                 break;
                             case false:
-                                flag[p.gety(), p.getx()] = true;
+                                flag[p.Gety(), p.Getx()] = true;
                                 flagnum++;
                                 break;
                         }
@@ -401,11 +404,11 @@ namespace Study
             }
             if (move)
             {
-                Console.SetCursorPosition((p.getx() - dx) * 2, (p.gety() - dy));
+                Console.SetCursorPosition((p.Getx() - dx) * 2, (p.Gety() - dy));
 
-                if (!open[p.gety() - dy, p.getx() - dx])
+                if (!open[p.Gety() - dy, p.Getx() - dx])
                 {
-                    if (flag[p.gety() - dy, p.getx() - dx] == false)
+                    if (flag[p.Gety() - dy, p.Getx() - dx] == false)
                     {
                         Console.Write("■");
                     }
@@ -414,9 +417,9 @@ namespace Study
                         Console.Write("♠");
                     }
                 }
-                else Console.Write(selectShape(numMap[p.gety() - dy, p.getx() - dx]));
+                else Console.Write(SelectShape(numMap[p.Gety() - dy, p.Getx() - dx]));
 
-                p.show();
+                p.Show();
             }
             return true;
         }

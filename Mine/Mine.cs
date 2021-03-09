@@ -71,8 +71,8 @@ namespace Study
                         return;
 
                 }
-                p.setx(Board.x / 2);
-                p.sety(Board.y / 2);
+                p.Setx(Board.x / 2);
+                p.Sety(Board.y / 2);
                 Console.Clear();
 
                 for (int i = 0; i < Board.y; i++)
@@ -84,14 +84,14 @@ namespace Study
                     }
                     Console.WriteLine();
                 }
-                p.show();
+                p.Show();
 
                 Console.SetCursorPosition(1, 26);
                 Console.Write("남은 지뢰 갯수: {0}", minenum);
 
                 while (true)
                 {
-                    if (board.receive(p.input(Console.ReadKey(true).Key)) == false)
+                    if (board.Receive(p.input(Console.ReadKey(true).Key)) == false)
                     {
                         break;
                     }
