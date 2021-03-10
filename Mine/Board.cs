@@ -6,7 +6,7 @@ namespace Study
 {
     class Board : Control
     {
-        Cell[,] cells; // ?
+        Cell[,] cells;
 
         public static int x, y;
 
@@ -14,20 +14,25 @@ namespace Study
         int flagnum = 0;
         bool lose = false;
 
+        //Cell cell = new Cell();
+
         public Board(int x = 9, int y = 9, int num = 10)
         {
             Board.x = x;
             Board.y = y;
             mineNum = num;
-            //cells = new Cell[y, x];
+
+            cells = new Cell[y, x];
+            //cells[x - 1, y - 1] = new Cell();
             Random r = new Random();
 
             for (int i = 0; i < y; i++)
             {
                 for (int j = 0; j < x; j++)
                 {
-                    Cell.numMap[i, j] = 0; 
-                    Cell.mineMap[i, j] = Cell.open[i, j] = false;
+                    cells[i, j] = new Cell();
+                    cells[i, j].numMap = 0;
+                    cells[i, j].mineMap = cells[i, j].open = false;
                 }
             }
 
@@ -36,10 +41,10 @@ namespace Study
                 int sx = r.Next(0, x);
                 int sy = r.Next(0, y);
 
-                if (Cell.mineMap[sy, sx] == false)
+                if (cells[sy, sx].mineMap == false)
                 {
-                    Cell.mineMap[sy, sx] = true;
-                    Cell.numMap[sy, sx] = -1;
+                    cells[sy, sx].mineMap = true;
+                    cells[sy, sx].numMap = -1;
 
                     for (int dx = -1; dx <= 1; dx++)
                     {
@@ -51,8 +56,8 @@ namespace Study
                             int ly = sy + dy;
                             if (lx >= 0 && lx < x && ly >= 0 && ly < y)
                             {
-                                if (Cell.mineMap[ly, lx] == true) { continue; }
-                                Cell.numMap[ly, lx] += 1;
+                                if (cells[ly, lx].mineMap == true) { continue; }
+                                cells[ly, lx].numMap += 1;
                             }
                         }
                     }
@@ -78,10 +83,10 @@ namespace Study
             {
                 for (int j = 0; j < x; j++)
                 {
-                    if (Cell.open[i, j])
+                    if (cells[i, j].open)
                     {
                         Console.SetCursorPosition(j * 2, i);
-                        Console.Write(SelectShape(Cell.numMap[i, j]));
+                        Console.Write(SelectShape(cells[i, j].numMap));
                     }
                     else { }
                 }
@@ -91,7 +96,7 @@ namespace Study
         void PrintShape(int x, int y)
         {
             Console.SetCursorPosition(x * 2, y);
-            Console.Write(SelectShape(Cell.numMap[y, x]));
+            Console.Write(SelectShape(cells[y, x].numMap));
         }
 
         string SelectShape(int s)
@@ -131,10 +136,10 @@ namespace Study
                     int ly = sy + dy;
                     if (lx >= 0 && lx < x && ly >= 0 && ly < y)
                     {
-                        if (Cell.open[ly, lx] == true) continue;
-                        if (Cell.flag[ly, lx] == true) Cell.flag[ly, lx] = false;
-                        Cell.open[ly, lx] = true;
-                        if (Cell.numMap[ly, lx] == 0)
+                        if (cells[ly, lx].open == true) continue;
+                        if (cells[ly, lx].flag == true) cells[ly, lx].flag = false;
+                        cells[ly, lx].open = true;
+                        if (cells[ly, lx].numMap == 0)
                         {
                             Invest0(ly, lx);
 
@@ -160,19 +165,19 @@ namespace Study
 
                     if (AvailablePoint(lx, ly))
                     {
-                        if (Cell.flag[ly, lx] == true)
+                        if (cells[ly, lx].flag == true)
                         {
                             sum++;
                         }
-                        if (Cell.open[ly, lx]) opened++;
+                        if (cells[ly, lx].open) opened++;
                     }
                 }
             }
-            if (opened == 8 - Cell.numMap[p.Gety(), p.Getx()])
+            if (opened == 8 - cells[p.Gety(), p.Getx()].numMap)
             {
                 return false;
             }
-            if (sum == Cell.numMap[p.Gety(), p.Getx()])
+            if (sum == cells[p.Gety(), p.Getx()].numMap)
             {
                 for (int dy = -1; dy <= 1; dy++)
                 {
@@ -184,28 +189,28 @@ namespace Study
 
                         if (AvailablePoint(lx, ly))
                         {
-                            if (!Cell.flag[ly, lx] && !Cell.open[ly, lx])
+                            if (!cells[ly, lx].flag && !cells[ly, lx].open)
                             {
-                                Cell.open[ly, lx] = true;
+                                cells[ly, lx].open = true;
                                 Console.SetCursorPosition(lx * 2, ly);
-                                Console.Write(SelectShape(Cell.numMap[ly, lx]));
+                                Console.Write(SelectShape(cells[ly, lx].numMap));
                             }
                             else { continue; }
 
-                            if (Cell.numMap[ly, lx] == 0)
+                            if (cells[ly, lx].numMap == 0)
                             {
                                 Invest0(ly, lx);
                             }
-                            else if (Cell.mineMap[ly, lx] == true)
+                            else if (cells[ly, lx].mineMap == true)
                             {
                                 for (int i = 0; i < y; i++)
                                 {
                                     for (int j = 0; j < x; j++)
                                     {
-                                        Cell.open[i, j] = true;
-                                        if (Cell.flag[i, j] == true && Cell.numMap[i, j] != -1)
+                                        cells[i, j].open = true;
+                                        if (cells[i, j].flag == true && cells[i, j].numMap != -1)
                                         {
-                                            Cell.flag[i, j] = false;
+                                            cells[i, j].flag = false;
                                         }
                                     }
                                 }
@@ -227,7 +232,7 @@ namespace Study
             {
                 for (int j = 0; j < Board.x; j++)
                 {
-                    if (Cell.open[i, j] == false) sum++;
+                    if (cells[i, j].open == false) sum++;
                 }
             }
 
@@ -272,31 +277,31 @@ namespace Study
                     move = true;
                     break;
                 case "enter":
-                    if (Cell.open[p.Gety(), p.Getx()] == true && Cell.numMap[p.Gety(), p.Getx()] != 0)
+                    if (cells[p.Gety(), p.Getx()].open == true && cells[p.Gety(), p.Getx()].numMap != 0)
                     {
                         InvestFlag(p);
                     }
-                    else if (!Cell.flag[p.Gety(), p.Getx()])
+                    else if (!cells[p.Gety(), p.Getx()].flag)
                     {
-                        Cell.open[p.Gety(), p.Getx()] = true;
+                        cells[p.Gety(), p.Getx()].open = true;
                         PrintShape(p.Getx(), p.Gety());
                     }
                     else { return true; }
 
-                    if (Cell.numMap[p.Gety(), p.Getx()] == 0)
+                    if (cells[p.Gety(), p.Getx()].numMap == 0)
                     {
                         Invest0(p.Gety(), p.Getx());
                     }
-                    else if (Cell.numMap[p.Gety(), p.Getx()] == -1 || lose)
+                    else if (cells[p.Gety(), p.Getx()].numMap == -1 || lose)
                     {
                         for (int i = 0; i < y; i++)
                         {
                             for (int j = 0; j < x; j++)
                             {
-                                Cell.open[i, j] = true;
-                                if (Cell.flag[i, j] == true && Cell.numMap[i, j] != -1)
+                                cells[i, j].open = true;
+                                if (cells[i, j].flag == true && cells[i, j].numMap != -1)
                                 {
-                                    Cell.flag[i, j] = false;
+                                    cells[i, j].flag = false;
                                 }
                             }
                         }
@@ -334,11 +339,11 @@ namespace Study
                         {
                             for (int j = 0; j < x; j++)
                             {
-                                Cell.open[i, j] = true;
-                                Cell.flag[i, j] = false;
-                                if (Cell.numMap[i, j] == -1)
+                                cells[i, j].open = true;
+                                cells[i, j].flag = false;
+                                if (cells[i, j].numMap == -1)
                                 {
-                                    Cell.numMap[i, j] = -2;
+                                    cells[i, j].numMap = -2;
                                 }
                             }
                         }
@@ -372,16 +377,16 @@ namespace Study
 
                     break;
 
-                case "Cell.flag":
-                    if (!Cell.open[p.Gety(), p.Getx()])
-                        switch (Cell.flag[p.Gety(), p.Getx()])
+                case "flag":
+                    if (!cells[p.Gety(), p.Getx()].open)
+                        switch (cells[p.Gety(), p.Getx()].flag)
                         {
                             case true:
-                                Cell.flag[p.Gety(), p.Getx()] = false;
+                                cells[p.Gety(), p.Getx()].flag = false;
                                 flagnum--;
                                 break;
                             case false:
-                                Cell.flag[p.Gety(), p.Getx()] = true;
+                                cells[p.Gety(), p.Getx()].flag = true;
                                 flagnum++;
                                 break;
                         }
@@ -398,9 +403,9 @@ namespace Study
             {
                 Console.SetCursorPosition((p.Getx() - dx) * 2, (p.Gety() - dy));
 
-                if (!Cell.open[p.Gety() - dy, p.Getx() - dx])
+                if (!cells[p.Gety() - dy, p.Getx() - dx].open)
                 {
-                    if (Cell.flag[p.Gety() - dy, p.Getx() - dx] == false)
+                    if (cells[p.Gety() - dy, p.Getx() - dx].flag == false)
                     {
                         Console.Write("■");
                     }
@@ -409,7 +414,7 @@ namespace Study
                         Console.Write("♠");
                     }
                 }
-                else Console.Write(SelectShape(Cell.numMap[p.Gety() - dy, p.Getx() - dx]));
+                else Console.Write(SelectShape(cells[p.Gety() - dy, p.Getx() - dx].numMap));
 
                 p.Show();
             }

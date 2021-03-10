@@ -6,14 +6,14 @@ namespace Study
 {
     class Cell
     {
-        public static int[,] numMap = new int[Board.y, Board.x];
-        public static bool[,] open = new bool[Board.y, Board.x];
-        public static bool[,] mineMap = new bool[Board.y, Board.x];
-        public static bool[,] flag = new bool[Board.y, Board.x];
-
+        public int numMap = new int();
+        public bool open = new bool();
+        public bool mineMap = new bool();
+        public bool flag = new bool();
+        
         public Cell()
         {
-            
         }
+
     }
 }
