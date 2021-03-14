@@ -7,6 +7,7 @@ namespace Study
     class Cell
     {
         public int numMap = new int();
+        public bool temporary = new bool();
         public bool open = new bool();
         public bool mineMap = new bool();
         public bool flag = new bool();

@@ -65,6 +65,10 @@ namespace Study
                     message = "enter";
                     break;
 
+                case ConsoleKey.D:
+                    message = "temporary";
+                    break;
+
                 case ConsoleKey.Q:
                     message = "quit";
                     break;

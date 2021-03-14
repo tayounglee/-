@@ -14,8 +14,6 @@ namespace Study
         int flagnum = 0;
         bool lose = false;
 
-        //Cell cell = new Cell();
-
         public Board(int x = 9, int y = 9, int num = 10)
         {
             Board.x = x;
@@ -23,7 +21,6 @@ namespace Study
             mineNum = num;
 
             cells = new Cell[y, x];
-            //cells[x - 1, y - 1] = new Cell();
             Random r = new Random();
 
             for (int i = 0; i < y; i++)
@@ -65,16 +62,6 @@ namespace Study
                 }
                 else { i--; }
             }
-            /*
-            for (int i = 0; i < y; i++)
-            {
-                for (int j = 0; j < x; j++)
-                {
-                    Console.Write("■");
-                }
-                Console.WriteLine();
-            }
-            */
         }
         public override void Show()
         {
@@ -228,9 +215,9 @@ namespace Study
         public bool WinCheck()
         {
             int sum = 0;
-            for (int i = 0; i < Board.y; i++)
+            for (int i = 0; i < y; i++)
             {
-                for (int j = 0; j < Board.x; j++)
+                for (int j = 0; j < x; j++)
                 {
                     if (cells[i, j].open == false) sum++;
                 }
@@ -395,6 +382,18 @@ namespace Study
                     Console.SetCursorPosition(1, 26);
                     Console.Write("남은 지뢰 갯수: {0}", mineNum - flagnum);
                     break;
+
+                case "temporary":
+                    if(!cells[p.Gety(), p.Getx()].temporary)
+                    {
+                        cells[p.Gety(), p.Getx()].temporary = true;
+                    }
+                    else
+                    {
+                        cells[p.Gety(), p.Getx()].temporary = false;
+                    }
+                    break;
+
                 case "quit":
                     Console.Clear();
                     return false;
@@ -407,8 +406,16 @@ namespace Study
                 {
                     if (cells[p.Gety() - dy, p.Getx() - dx].flag == false)
                     {
-                        Console.Write("■");
+                        if (cells[p.Gety() - dy, p.Getx() - dx].temporary == true)
+                        {
+                            Console.Write("？");
+                        }
+                        else
+                        {
+                            Console.Write("■");
+                        }
                     }
+
                     else
                     {
                         Console.Write("♠");

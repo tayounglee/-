@@ -60,7 +60,7 @@ namespace Study
                         Console.WriteLine("│                                   │");
                         Console.WriteLine("│          ←→↑↓: 방향키         │");
                         Console.WriteLine("│          a: 선택, s:플래그        │");
-                        Console.WriteLine("│          q: 나가기                │");
+                        Console.WriteLine("│          d: 보류, q: 나가기       │");
                         Console.WriteLine("│         Please press Enter        │");
                         Console.WriteLine("│                                   │");
                         Console.WriteLine("│                                   │");
