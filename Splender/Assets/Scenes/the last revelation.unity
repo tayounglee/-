@@ -157,10 +157,10 @@ Transform:
   - {fileID: 1966857291}
   - {fileID: 2017956438}
   - {fileID: 120613927}
-  - {fileID: 1846462144}
-  - {fileID: 1244403039}
   - {fileID: 1146002877}
   - {fileID: 995420353}
+  - {fileID: 1846462144}
+  - {fileID: 1244403039}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -260,6 +260,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9884b1a9ded4dc240b53c0978ec88137, type: 3}
+--- !u!1 &198425266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198425267}
+  m_Layer: 0
+  m_Name: NobleCardSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &198425267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198425266}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86, y: 0.10000038, z: -0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1244403039}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &255496298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -301,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4463149083286388, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4463149083286388, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -309,6 +339,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
+--- !u!1 &495603194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495603195}
+  m_Layer: 0
+  m_Name: NobleCardDeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495603195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495603194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.16799995, y: 0.10000038, z: -2.0339994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1244403039}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568118296
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568118296}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.099999875, y: 0.10000038, z: -0.5}
+  m_LocalPosition: {x: 0.05, y: 0.10000038, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1244403039}
@@ -451,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4463149083286388, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4463149083286388, guid: 2e57ba42788234646b2d6b76f15dac76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -688,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088193067}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.29999998, y: 0.10000038, z: -0.5}
+  m_LocalPosition: {x: -0.4, y: 0.10000038, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1244403039}
@@ -813,15 +873,18 @@ MonoBehaviour:
   CardPrefab1: []
   CardPrefab2: []
   CardPrefab3: []
+  NobleCardPrefab: []
   CardDeck1: []
   CardDeck2: []
   CardDeck3: []
-  Lv1CardSpawnPoint: {fileID: 1161801363}
-  Lv2CardSpawnPoint: {fileID: 1008916202}
-  Lv3CardSpawnPoint: {fileID: 695577061}
+  Lv1CardSpawnPoint: {fileID: 1088193068}
+  Lv2CardSpawnPoint: {fileID: 568118297}
+  Lv3CardSpawnPoint: {fileID: 1308092871}
+  NobleCardSpawnPoint: {fileID: 198425267}
   DeckPoint1: {fileID: 1161801363}
   DeckPoint2: {fileID: 1008916202}
   DeckPoint3: {fileID: 695577061}
+  nobleCardNumber: 0
 --- !u!114 &1244403038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,8 +915,10 @@ Transform:
   - {fileID: 1088193068}
   - {fileID: 568118297}
   - {fileID: 1308092871}
+  - {fileID: 495603195}
+  - {fileID: 198425267}
   m_Father: {fileID: 33983859}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1275216886
 PrefabInstance:
@@ -1077,7 +1142,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 33983859}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!4 &1966857291 stripped
 Transform:

@@ -22,8 +22,6 @@ public class CardStats : MonoBehaviour
 
     private void Awake()
     {
-        
-
         Lv = int.Parse(name.Substring(0, 1));
 
         rigidbody = GetComponent<Rigidbody>();
