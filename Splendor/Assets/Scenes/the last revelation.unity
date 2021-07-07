@@ -304,7 +304,6 @@ GameObject:
   - component: {fileID: 235115090}
   - component: {fileID: 235115089}
   - component: {fileID: 235115088}
-  - component: {fileID: 235115087}
   m_Layer: 0
   m_Name: Ruby Chips
   m_TagString: Untagged
@@ -326,22 +325,6 @@ Transform:
   m_Father: {fileID: 1164299864}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &235115087
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235115085}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &235115088
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -372,7 +355,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 4678662375422864416, guid: 4b362128d84f18d42a8649c2c859e07b, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &235115090
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -484,7 +466,6 @@ GameObject:
   - component: {fileID: 331754019}
   - component: {fileID: 331754018}
   - component: {fileID: 331754017}
-  - component: {fileID: 331754016}
   m_Layer: 0
   m_Name: Diamond Chips
   m_TagString: Untagged
@@ -506,22 +487,6 @@ Transform:
   m_Father: {fileID: 1164299864}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &331754016
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331754014}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &331754017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -552,7 +517,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 7539104105575515770, guid: d55230d1f7aa83f4aadbe7e817f8c73b, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &331754019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1101,7 +1065,6 @@ GameObject:
   - component: {fileID: 1209051308}
   - component: {fileID: 1209051307}
   - component: {fileID: 1209051306}
-  - component: {fileID: 1209051305}
   m_Layer: 0
   m_Name: Emerald Chips
   m_TagString: Untagged
@@ -1123,22 +1086,6 @@ Transform:
   m_Father: {fileID: 1164299864}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1209051305
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209051303}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &1209051306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1169,7 +1116,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 3250084562122834089, guid: 16689083a45547b449c8a4cacc61b095, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &1209051308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1314,7 +1260,7 @@ MonoBehaviour:
   DeckPoint1: {fileID: 1161801363}
   DeckPoint2: {fileID: 1008916202}
   DeckPoint3: {fileID: 695577061}
-  nobleCardNumber: 0
+  NobleCardNumber: 0
 --- !u!114 &1244403038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,7 +1445,6 @@ GameObject:
   - component: {fileID: 1582163518}
   - component: {fileID: 1582163517}
   - component: {fileID: 1582163516}
-  - component: {fileID: 1582163515}
   m_Layer: 0
   m_Name: Sapphire Chips
   m_TagString: Untagged
@@ -1521,22 +1466,6 @@ Transform:
   m_Father: {fileID: 1164299864}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1582163515
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582163513}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &1582163516
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1567,7 +1496,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 6480706315177908394, guid: 161d084b0b91b584c83f19336797e03a, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &1582163518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1630,7 +1558,6 @@ GameObject:
   - component: {fileID: 1639479660}
   - component: {fileID: 1639479659}
   - component: {fileID: 1639479658}
-  - component: {fileID: 1639479657}
   m_Layer: 0
   m_Name: Onyx Chips
   m_TagString: Untagged
@@ -1652,22 +1579,6 @@ Transform:
   m_Father: {fileID: 1164299864}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1639479657
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639479655}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &1639479658
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1698,7 +1609,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 5583735331292239528, guid: 366d8bf705fc73740802f75916e1c5bd, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &1639479660
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1899,7 +1809,6 @@ GameObject:
   - component: {fileID: 2010791150}
   - component: {fileID: 2010791149}
   - component: {fileID: 2010791148}
-  - component: {fileID: 2010791152}
   m_Layer: 0
   m_Name: Gold Chips
   m_TagString: Untagged
@@ -1951,7 +1860,6 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   chipType: {fileID: 909223908355504959, guid: afda0454ed188e44ca005e660a396b58, type: 3}
-  ChipDeck: {fileID: 0}
 --- !u!23 &2010791150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2001,22 +1909,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010791146}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &2010791152
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010791146}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &2017956438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4534449285516404, guid: 0941535f5a7c0d846a45a6370dc4036b, type: 3}

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8774249563608722018}
   - component: {fileID: 6850225791477130444}
   - component: {fileID: 7927391676994040354}
-  - component: {fileID: 9148625610743462227}
   - component: {fileID: 1121853797883813095}
   - component: {fileID: 1578158871502463471}
+  - component: {fileID: 3439881012264251034}
   m_Layer: 0
   m_Name: Onyx Chip
   m_TagString: Untagged
@@ -84,23 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9148625610743462227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583735331292239528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48211c6027416ac4c8f8d8052857d93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChipType: 
-  ChipCount: 0
-  Chips: []
-  chipType: {fileID: 0}
-  chipStash: {fileID: 0}
 --- !u!64 &1121853797883813095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -131,3 +114,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3439881012264251034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583735331292239528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e36927ad4bd28542be88f79b24e1fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 
+  chipStash: {fileID: 0}

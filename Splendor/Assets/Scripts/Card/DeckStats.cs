@@ -30,7 +30,7 @@ public class DeckStats : MonoBehaviour
     Vector3 current2;
     Vector3 current3;
 
-    public int nobleCardNumber;
+    public int NobleCardNumber;
     
 
     /// <summary>
@@ -115,15 +115,15 @@ public class DeckStats : MonoBehaviour
         Lv2CardSpawnPoint.position = current2;
         Lv3CardSpawnPoint.position = current3;
 
-        CardDeck1[0].GetComponent<CardStats>().MoveToTable(Lv1CardSpawnPoint);
+        CardDeck1[0].GetComponent<CardStats>().MoveCardToTable(Lv1CardSpawnPoint);
         current.z += 0.4f;
         CardDeck1.RemoveAt(0);
 
-        CardDeck2[0].GetComponent<CardStats>().MoveToTable(Lv2CardSpawnPoint);
+        CardDeck2[0].GetComponent<CardStats>().MoveCardToTable(Lv2CardSpawnPoint);
         current2.z += 0.4f;
         CardDeck2.RemoveAt(0);
 
-        CardDeck3[0].GetComponent<CardStats>().MoveToTable(Lv3CardSpawnPoint);
+        CardDeck3[0].GetComponent<CardStats>().MoveCardToTable(Lv3CardSpawnPoint);
         current3.z += 0.4f;
         CardDeck3.RemoveAt(0);
     }

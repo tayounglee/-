@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4880526961975713160}
   - component: {fileID: 3759969429974092897}
   - component: {fileID: 7215899788080360625}
-  - component: {fileID: 8606500611321231423}
   - component: {fileID: 3760208299998703254}
   - component: {fileID: 3932836203300196701}
+  - component: {fileID: 6877321496004954683}
   m_Layer: 0
   m_Name: Sapphire Chip
   m_TagString: Untagged
@@ -84,23 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8606500611321231423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6480706315177908394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48211c6027416ac4c8f8d8052857d93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChipType: 
-  ChipCount: 0
-  Chips: []
-  chipType: {fileID: 0}
-  chipStash: {fileID: 0}
 --- !u!64 &3760208299998703254
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -131,3 +114,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6877321496004954683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480706315177908394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e36927ad4bd28542be88f79b24e1fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 
+  chipStash: {fileID: 0}

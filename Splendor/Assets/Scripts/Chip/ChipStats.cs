@@ -9,23 +9,13 @@ public class ChipStats : MonoBehaviour
     public List<GameObject> Chips;
     public GameObject chipType;
 
-    private float Timer = 0;
-    private float TimerEnd = 4f;
-    private bool EnabledToMove = false;
-
-    Vector3 TargetPos;
-    Quaternion TargetRot;
-
-    private Rigidbody Rigidbody;
-
-    public Transform ChipDeck;
-
+    /// <summary>
+    /// 골드칩은 5개 그외 종류의칩은 7개 스폰
+    /// </summary>
     private void Awake()
     {
         Chips = new List<GameObject>();
         ChipType = gameObject.name;
-        Rigidbody = GetComponent<Rigidbody>();
-        Rigidbody.freezeRotation = true;
 
         if (ChipType == "Gold Chips")
         {
@@ -37,30 +27,21 @@ public class ChipStats : MonoBehaviour
         }
         else
         {
+            ChipCount = 7;
             for (int i = 0; i < 7; i++)
             {
                 Chips.Add(Instantiate(chipType, transform.position, transform.rotation));
             }
-            ChipCount = 7;
         }
     }
 
 
-
-    // Update is called once per frame
+    /// <summary>
+    /// 
+    /// </summary>
     void Update()
     {
-        if (EnabledToMove && Timer < TimerEnd)
-        {
-            Timer += Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, TargetPos, 3f * Time.deltaTime);
-            if (Timer > TimerEnd)
-            {
-                gameObject.GetComponent<Rigidbody>().useGravity = true;
-                EnabledToMove = false;
-                Timer = 0;
-            }
-        }
+      
     }
 }
 
