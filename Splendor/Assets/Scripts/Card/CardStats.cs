@@ -10,8 +10,6 @@ public class CardStats : MonoBehaviour
     Vector3 TargetPos;
     Quaternion TargetRot;
 
-    private int goldChipsToUse = 0;
-
     private Rigidbody rigidbody;
     private bool EnableMove;
     private float Timer = 0;

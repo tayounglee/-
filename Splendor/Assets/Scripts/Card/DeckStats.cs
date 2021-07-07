@@ -54,7 +54,7 @@ public class DeckStats : MonoBehaviour
         CardPrefab3 = new List<GameObject>(ShuffleCards(notRandomizedCards3));
 
         var notRandomizedCards4 = new List<GameObject>(Resources.LoadAll<GameObject>("Prefabs/Noble Cards Prefabs"));
-        NobleCardPrefab = new List<GameObject>(ShuffleCards(notRandomizedCards4).GetRange(0, 5));
+        NobleCardPrefab = new List<GameObject>(ShuffleCards(notRandomizedCards4));
 
         DeckOnTable();
 
