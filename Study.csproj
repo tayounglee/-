@@ -6,13 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="C-Sharp\Class.cs" />
-    <Compile Remove="C-Sharp\Method.cs" />
-    <Compile Remove="Calculater.cs" />
+    <Compile Remove="C-Sharp\**" />
+    <EmbeddedResource Remove="C-Sharp\**" />
+    <None Remove="C-Sharp\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="C-Sharp\Class.cs" />
+    <Compile Remove="Calculater.cs" />
   </ItemGroup>
 
 </Project>

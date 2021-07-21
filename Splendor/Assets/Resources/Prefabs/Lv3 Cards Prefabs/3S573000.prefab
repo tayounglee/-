@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5409066706228083104}
   - component: {fileID: 4871658615285080628}
   - component: {fileID: 4771795368004346756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Card Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4722976042294269955}
   - component: {fileID: 5496763141674135882}
   - component: {fileID: 6011997376131550444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3S573000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 5250143710845964437}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7205925, y: 1.16, z: 0.31897184}
-  m_LocalScale: {x: 0.03, y: 1, z: 0.04}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.035}
   m_Children:
   - {fileID: 5409066706228083104}
   m_Father: {fileID: 0}
@@ -194,8 +194,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3f1ed89df0cd54e80ff26357e9b107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiamondChipsValue: 0
+  SapphireChipsValue: 0
+  EmeraldChipsValue: 0
+  RubyChipsValue: 0
+  OnyxChipsValue: 0
+  Type: 
+  PointValue: 0
   Lv: 0
-  isBooked: 0
+  Booking: 0
+  IsBooked: 0
+  Keep: {fileID: 0}
 --- !u!65 &6011997376131550444
 BoxCollider:
   m_ObjectHideFlags: 0

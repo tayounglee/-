@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2972913245328939185}
   - component: {fileID: 9130799309617558786}
   - component: {fileID: 8325881311260327104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Card Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 515567419269010441}
   - component: {fileID: 6792294281466406482}
   - component: {fileID: 7525033239313440937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2R230005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 6802491680066805720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7205925, y: 1.2862, z: 0.31897184}
-  m_LocalScale: {x: 0.03, y: 1, z: 0.04}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.035}
   m_Children:
   - {fileID: 2972913245328939185}
   m_Father: {fileID: 0}
@@ -207,5 +207,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3f1ed89df0cd54e80ff26357e9b107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiamondChipsValue: 0
+  SapphireChipsValue: 0
+  EmeraldChipsValue: 0
+  RubyChipsValue: 0
+  OnyxChipsValue: 0
+  Type: 
+  PointValue: 0
   Lv: 0
-  isBooked: 0
+  Booking: 0
+  IsBooked: 0
+  Keep: {fileID: 0}

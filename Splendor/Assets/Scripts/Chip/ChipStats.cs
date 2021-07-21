@@ -7,7 +7,12 @@ public class ChipStats : MonoBehaviour
     public string ChipType;
     public int ChipCount;
     public List<GameObject> Chips;
+    public List<GameObject> ChipBox;
+    PlayerControl PlayerControl;
+    ClickManager ClickManager;
     public GameObject chipType;
+
+    public bool IsBooked = false;
 
     /// <summary>
     /// 골드칩은 5개 그외 종류의칩은 7개 스폰
@@ -15,9 +20,12 @@ public class ChipStats : MonoBehaviour
     private void Awake()
     {
         Chips = new List<GameObject>();
-        ChipType = gameObject.name;
+        ChipBox = new List<GameObject>();
+        ClickManager = GetComponent<ClickManager>();
+        PlayerControl = GetComponent<PlayerControl>();
+        ChipType = gameObject.name.Substring(0, 1);
 
-        if (ChipType == "Gold Chips")
+        if (ChipType == "G")
         {
             for (int i = 0; i < 5; i++)
             {
@@ -35,13 +43,68 @@ public class ChipStats : MonoBehaviour
         }
     }
 
+    public void MouseLeftClick(PlayerControl Player)
+    {
+        if (ChipCount >= 1)
+        {
+            Player.GetChip(this);
+            if (Player.LimitAction)
+            {
 
+            }
+        }
+
+        else
+        {
+            print("칩더미에 칩이 4개 미만입니다.");
+        }
+    }
+
+    public void MouseRightClick(PlayerControl Player)
+    {
+        if (ChipCount - 2 >= 2)
+        {
+            //ChipCount = ChipCount - 2;
+            Player.GetTwoChips(this);
+            if (Player.LimitAction)
+            {
+
+            }
+        }
+        else
+        {
+            print("칩더미에 칩이 4개 미만입니다.");
+        }
+    }
+
+    public void GiveChipToPlayer(PlayerControl Player, ChipStats ChipStats)
+    {
+        Chips[ChipCount - 1].GetComponent<ChipControl>().MoveToPlayer(Player);
+        Player.AddChip(Chips[ChipCount - 1]);
+        //ChipBox.Add(Chips[ChipCount - 1]);
+        Chips.RemoveAt(ChipCount - 1);
+        ChipCount--;
+    }
+
+    public void PayChips(GameObject chip)
+    {
+        Chips.Add(chip);
+        chip.GetComponent<ChipControl>().MoveTo(this.transform);
+        ChipCount++;
+    }
+
+    public void PayChips(PlayerControl Player, GameObject chip)
+    {
+        Chips.Add(chip);
+        chip.GetComponent<ChipControl>().MoveTo(this.transform);
+        ChipCount++;
+    }
     /// <summary>
     /// 
     /// </summary>
     void Update()
     {
-      
+
     }
 }
 

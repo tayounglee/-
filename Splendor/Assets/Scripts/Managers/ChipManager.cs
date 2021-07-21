@@ -33,20 +33,50 @@ public class ChipManager : MonoBehaviour
     public Text P4Onyx;
     public Text P4Gold;
 
+    public PlayerControl Player1;
+    public PlayerControl Player2;
+    public PlayerControl Player3;
+    public PlayerControl Player4;
+
+
     void UpdatePlayer1()
     {
+        P1Diamond.text = Player1.DiamondChips.Count.ToString();
+        P1Sapphire.text = Player1.SapphireChips.Count.ToString();
+        P1Emerald.text = Player1.EmeraldChips.Count.ToString();
+        P1Ruby.text = Player1.RubyChips.Count.ToString();
+        P1Onyx.text = Player1.OnyxChips.Count.ToString();
+        P1Gold.text = Player1.GoldChips.Count.ToString();
     }
 
     void UpdatePlayer2()
     {
+        P2Diamond.text = Player2.DiamondChips.Count.ToString();
+        P2Sapphire.text = Player2.SapphireChips.Count.ToString();
+        P2Emerald.text = Player2.EmeraldChips.Count.ToString();
+        P2Ruby.text = Player2.RubyChips.Count.ToString();
+        P2Onyx.text = Player2.OnyxChips.Count.ToString();
+        P2Gold.text = Player2.GoldChips.Count.ToString();
     }
 
     void UpdatePlayer3()
     {
+        P3Diamond.text = Player3.DiamondChips.Count.ToString();
+        P3Sapphire.text = Player3.SapphireChips.Count.ToString();
+        P3Emerald.text = Player3.EmeraldChips.Count.ToString();
+        P3Ruby.text = Player3.RubyChips.Count.ToString();
+        P3Onyx.text = Player3.OnyxChips.Count.ToString();
+        P3Gold.text = Player3.GoldChips.Count.ToString();
     }
 
     void UpdatePlayer4()
     {
+        P4Diamond.text = Player4.DiamondChips.Count.ToString();
+        P4Sapphire.text = Player4.SapphireChips.Count.ToString();
+        P4Emerald.text = Player4.EmeraldChips.Count.ToString();
+        P4Ruby.text = Player4.RubyChips.Count.ToString();
+        P4Onyx.text = Player4.OnyxChips.Count.ToString();
+        P4Gold.text = Player4.GoldChips.Count.ToString();
     }
 
     public void UpdatePlayer(string Name)

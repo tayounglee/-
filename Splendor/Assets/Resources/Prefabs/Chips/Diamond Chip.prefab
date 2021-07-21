@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6597486609555978095}
   - component: {fileID: 7722695740393350351}
   - component: {fileID: -5863146607995142212}
-  m_Layer: 0
+  - component: {fileID: 7513171486758643508}
+  m_Layer: 10
   m_Name: Diamond Chip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7539104105575515770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.307, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.01, z: 0.15}
+  m_LocalScale: {x: 0.1, y: 0.01, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,4 +128,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 
-  chipStash: {fileID: 0}
+--- !u!114 &7513171486758643508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7539104105575515770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48211c6027416ac4c8f8d8052857d93f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChipType: 
+  ChipCount: 0
+  Chips: []
+  ChipBox: []
+  chipType: {fileID: 1285508875978724, guid: 09fd774473e8b114b8d4338ec5fc5d2c, type: 3}
+  IsBooked: 0

@@ -61,7 +61,7 @@ public class DeckStats : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             Invoke("CardSpawnPoint", Time);
-            Time += 1.5f;
+            Time += 0.5f;
         }
     }
 
@@ -100,9 +100,28 @@ public class DeckStats : MonoBehaviour
         for (int i = 0; i < 5; i++)
         {
             current = NobleCardSpawnPoint.position;
-            current.z += i * 0.35f;
+            current.z += i * 0.3f;
             Instantiate(NobleCardPrefab[i], current, Quaternion.Euler(new Vector3(0, 270, 0)));
         }       
+    }
+
+    public void CheckPlayerCardValues(PlayerControl Player)
+    {
+        var nobleCardsOnTable = new List<NobleCardStats>((NobleCardStats[])FindObjectsOfType(typeof(NobleCardStats)));
+
+        foreach (var item in nobleCardsOnTable)
+        {
+
+            if (!item.IsOwned)
+            {
+                if (item.CheckPlayer(Player))
+                {
+                    nobleCardsOnTable.Remove(item);
+                    item.IsOwned = true;
+                    Player.GetNobleCard(item);
+                }
+            }
+        }
     }
 
 
@@ -116,15 +135,15 @@ public class DeckStats : MonoBehaviour
         Lv3CardSpawnPoint.position = current3;
 
         CardDeck1[0].GetComponent<CardStats>().MoveCardToTable(Lv1CardSpawnPoint);
-        current.z += 0.4f;
+        current.z += 0.3f;
         CardDeck1.RemoveAt(0);
 
         CardDeck2[0].GetComponent<CardStats>().MoveCardToTable(Lv2CardSpawnPoint);
-        current2.z += 0.4f;
+        current2.z += 0.3f;
         CardDeck2.RemoveAt(0);
 
         CardDeck3[0].GetComponent<CardStats>().MoveCardToTable(Lv3CardSpawnPoint);
-        current3.z += 0.4f;
+        current3.z += 0.3f;
         CardDeck3.RemoveAt(0);
     }
 }
