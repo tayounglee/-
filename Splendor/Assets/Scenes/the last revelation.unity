@@ -241,7 +241,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 628170374}
-  - {fileID: 1632911499}
   - {fileID: 100799665}
   - {fileID: 925655058}
   - {fileID: 1717431582}
@@ -805,36 +804,6 @@ Transform:
   m_Father: {fileID: 355140957}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!1 &98919326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 98919327}
-  m_Layer: 0
-  m_Name: Diamond (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &98919327
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98919326}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.3, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100799664
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +839,7 @@ Transform:
   - {fileID: 798343761}
   - {fileID: 455720975}
   m_Father: {fileID: 31304869}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &101863242
 GameObject:
@@ -913,36 +882,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0000038146973, y: -18.41999}
   m_SizeDelta: {x: 212.74, y: 36.84}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &104690250
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 104690251}
-  m_Layer: 0
-  m_Name: Diamond (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &104690251
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104690250}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.4, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105746807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,36 +2045,6 @@ Transform:
   m_Father: {fileID: 1426029220}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &282962146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 282962147}
-  m_Layer: 0
-  m_Name: Diamond (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &282962147
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282962146}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.5, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286361720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,36 +2870,6 @@ Transform:
   - {fileID: 1300244433}
   m_Father: {fileID: 1411076921}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &365712034
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 365712035}
-  m_Layer: 0
-  m_Name: Diamond (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &365712035
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365712034}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.2, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367052980
 GameObject:
@@ -5397,7 +5276,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardManager: {fileID: 1244403038}
-  DeckStats: {fileID: 0}
+  DeckStats: {fileID: 1244403037}
+  ChipStats:
+  - {fileID: 235115089}
+  - {fileID: 331754018}
+  - {fileID: 1209051307}
+  - {fileID: 1582163517}
+  - {fileID: 1639479659}
+  - {fileID: 2010791149}
   NobleCardPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -5497,7 +5383,7 @@ MonoBehaviour:
   - {fileID: 1256192544}
   - {fileID: 1809519853}
   - {fileID: 1948578182}
-  freeBookedPlaces: 
+  freeBookedPlaces: 01010101
   ChipsTaken: []
   TotalPoint: 0
   LimitChip: 0
@@ -5560,36 +5446,6 @@ Transform:
   - {fileID: 917738123}
   m_Father: {fileID: 1803978865}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &682440117
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 682440118}
-  m_Layer: 0
-  m_Name: Diamond
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &682440118
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682440117}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683040536
 GameObject:
@@ -6492,7 +6348,7 @@ Transform:
   - {fileID: 2099246686}
   - {fileID: 186567198}
   m_Father: {fileID: 31304869}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781698751
 GameObject:
@@ -7610,7 +7466,7 @@ Transform:
   - {fileID: 785049617}
   - {fileID: 1960999606}
   m_Father: {fileID: 31304869}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925944462
 GameObject:
@@ -12108,7 +11964,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardManager: {fileID: 1244403038}
-  DeckStats: {fileID: 0}
+  DeckStats: {fileID: 1244403037}
+  ChipStats:
+  - {fileID: 235115089}
+  - {fileID: 331754018}
+  - {fileID: 1209051307}
+  - {fileID: 1582163517}
+  - {fileID: 1639479659}
+  - {fileID: 2010791149}
   NobleCardPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -12208,7 +12071,7 @@ MonoBehaviour:
   - {fileID: 2088656516}
   - {fileID: 653691983}
   - {fileID: 683040537}
-  freeBookedPlaces: 
+  freeBookedPlaces: 01010101
   ChipsTaken: []
   TotalPoint: 0
   LimitChip: 0
@@ -12294,36 +12157,6 @@ Transform:
   m_Father: {fileID: 528783255}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!1 &1367715798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1367715799}
-  m_Layer: 0
-  m_Name: Diamond (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1367715799
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367715798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.1, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1369158482
 GameObject:
   m_ObjectHideFlags: 0
@@ -12799,7 +12632,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardManager: {fileID: 1244403038}
-  DeckStats: {fileID: 0}
+  DeckStats: {fileID: 1244403037}
+  ChipStats:
+  - {fileID: 235115089}
+  - {fileID: 331754018}
+  - {fileID: 1209051307}
+  - {fileID: 1582163517}
+  - {fileID: 1639479659}
+  - {fileID: 2010791149}
   NobleCardPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -12899,7 +12739,7 @@ MonoBehaviour:
   - {fileID: 1535227231}
   - {fileID: 1443702632}
   - {fileID: 816447500}
-  freeBookedPlaces: 
+  freeBookedPlaces: 01010101
   ChipsTaken: []
   TotalPoint: 0
   LimitChip: 0
@@ -14659,7 +14499,7 @@ Transform:
   - {fileID: 618636654}
   - {fileID: 997966165}
   m_Father: {fileID: 31304869}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597982408
 GameObject:
@@ -14969,43 +14809,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630466545}
   m_CullTransparentMesh: 0
---- !u!1 &1632911498
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632911499}
-  m_Layer: 0
-  m_Name: .
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1632911499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632911498}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 682440118}
-  - {fileID: 1367715799}
-  - {fileID: 365712035}
-  - {fileID: 98919327}
-  - {fileID: 104690251}
-  - {fileID: 282962147}
-  - {fileID: 1874777310}
-  m_Father: {fileID: 31304869}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1633492730
 GameObject:
   m_ObjectHideFlags: 0
@@ -16106,7 +15909,7 @@ Transform:
   - {fileID: 622398878}
   - {fileID: 1892473182}
   m_Father: {fileID: 31304869}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1717731285
 GameObject:
@@ -16710,7 +16513,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardManager: {fileID: 1244403038}
-  DeckStats: {fileID: 0}
+  DeckStats: {fileID: 1244403037}
+  ChipStats:
+  - {fileID: 235115089}
+  - {fileID: 331754018}
+  - {fileID: 1209051307}
+  - {fileID: 1582163517}
+  - {fileID: 1639479659}
+  - {fileID: 2010791149}
   NobleCardPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -16810,7 +16620,7 @@ MonoBehaviour:
   - {fileID: 212170732}
   - {fileID: 1239949144}
   - {fileID: 1371248890}
-  freeBookedPlaces: 
+  freeBookedPlaces: 01010101
   ChipsTaken: []
   TotalPoint: 0
   LimitChip: 0
@@ -17639,36 +17449,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1486959310}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1874777309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1874777310}
-  m_Layer: 0
-  m_Name: Diamond (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1874777310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874777309}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.6, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1632911499}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877858005
 GameObject:

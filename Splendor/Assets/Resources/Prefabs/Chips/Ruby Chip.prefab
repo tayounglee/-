@@ -144,5 +144,5 @@ MonoBehaviour:
   ChipCount: 0
   Chips: []
   ChipBox: []
-  chipType: {fileID: 1285508875978724, guid: 09fd774473e8b114b8d4338ec5fc5d2c, type: 3}
+  chipType: {fileID: 0}
   IsBooked: 0

@@ -73,7 +73,7 @@ public class CardStats : MonoBehaviour
         Player.GetCard(GetComponent<CardStats>());
     }
 
-    public void OnRightClick(PlayerControl Player)
+    public void MouseRightClick(PlayerControl Player)
     {
         if (IsBooked)
         {
@@ -82,7 +82,7 @@ public class CardStats : MonoBehaviour
         }
         IsBooked = true;
         Keep = Player;
-        Player.BookCard(GetComponent<CardStats>(), GetComponent<ChipStats>());
+        Player.BookCard(GetComponent<CardStats>());
     }
 
     public bool CheckPlayer(PlayerControl Player)

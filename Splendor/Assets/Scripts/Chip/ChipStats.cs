@@ -8,10 +8,8 @@ public class ChipStats : MonoBehaviour
     public int ChipCount;
     public List<GameObject> Chips;
     public List<GameObject> ChipBox;
-    PlayerControl PlayerControl;
-    ClickManager ClickManager;
     public GameObject chipType;
-
+    //PlayerControl PlayerControl;
     public bool IsBooked = false;
 
     /// <summary>
@@ -21,8 +19,7 @@ public class ChipStats : MonoBehaviour
     {
         Chips = new List<GameObject>();
         ChipBox = new List<GameObject>();
-        ClickManager = GetComponent<ClickManager>();
-        PlayerControl = GetComponent<PlayerControl>();
+        
         ChipType = gameObject.name.Substring(0, 1);
 
         if (ChipType == "G")
@@ -43,11 +40,11 @@ public class ChipStats : MonoBehaviour
         }
     }
 
-    public void MouseLeftClick(PlayerControl Player)
+    public void MouseLeftClick(PlayerControl Player, CardStats Card)
     {
         if (ChipCount >= 1)
         {
-            Player.GetChip(this);
+            Player.GetChip(this, Card);
             if (Player.LimitAction)
             {
 
@@ -60,15 +57,15 @@ public class ChipStats : MonoBehaviour
         }
     }
 
-    public void MouseRightClick(PlayerControl Player)
+    public void MouseRightClick(PlayerControl Player, CardStats Card)
     {
         if (ChipCount - 2 >= 2)
         {
             //ChipCount = ChipCount - 2;
-            Player.GetTwoChips(this);
+            Player.GetTwoChips(this, Card);
             if (Player.LimitAction)
             {
-
+                
             }
         }
         else
@@ -77,7 +74,7 @@ public class ChipStats : MonoBehaviour
         }
     }
 
-    public void GiveChipToPlayer(PlayerControl Player, ChipStats ChipStats)
+    public void GiveChipToPlayer(PlayerControl Player)
     {
         Chips[ChipCount - 1].GetComponent<ChipControl>().MoveToPlayer(Player);
         Player.AddChip(Chips[ChipCount - 1]);
@@ -93,18 +90,11 @@ public class ChipStats : MonoBehaviour
         ChipCount++;
     }
 
-    public void PayChips(PlayerControl Player, GameObject chip)
-    {
-        Chips.Add(chip);
-        chip.GetComponent<ChipControl>().MoveTo(this.transform);
-        ChipCount++;
-    }
     /// <summary>
     /// 
     /// </summary>
     void Update()
     {
-
     }
 }
 

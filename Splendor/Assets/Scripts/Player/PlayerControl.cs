@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour
     public DeckStats DeckStats;
     ChipManager ChipManager;
     ClickManager ClickManager;
-    List<ChipStats> ChipStats;
+    public List<ChipStats> ChipStats;
 
     public Transform[] NobleCardPoints;
     public Transform[] DiamondCardPoints;
@@ -165,14 +165,14 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    public void GetTwoChips(ChipStats ChipStats)
+    public void GetTwoChips(ChipStats ChipStats, CardStats Card)
     {
         if (!LimitAction)
         {
             if (TakeChips == 3 && ChipStats.ChipType != "G")
             {
-                GetChip(ChipStats);
-                GetChip(ChipStats);
+                GetChip(ChipStats, Card);
+                GetChip(ChipStats, Card);
 
                 EndTurn();
             }
@@ -269,7 +269,7 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    public void GetChip(ChipStats ChipStats)
+    public void GetChip(ChipStats ChipStats, CardStats Card)
     {
         if (!LimitAction)
         {
@@ -302,7 +302,7 @@ public class PlayerControl : MonoBehaviour
                     break;
             }
 
-            ChipStats.GiveChipToPlayer(this, ChipStats);
+            ChipStats.GiveChipToPlayer(this);
 
             ChipsTaken.Add(ChipStats.ChipType);
 
@@ -319,9 +319,14 @@ public class PlayerControl : MonoBehaviour
                 print("반환할 칩을 선택해주세요.");
             }
         }
+
+        else
+        {
+            PayChips(Card);
+        }
     }
 
-    public void BookCard(CardStats Card, ChipStats chipStats)
+    public void BookCard(CardStats Card)
     {
         if (!LimitAction)
         {
@@ -333,7 +338,7 @@ public class PlayerControl : MonoBehaviour
             LimitChip++;
             bookedCardsNumber++;
 
-            ChipStats.Find(c => c.ChipType == "G").GiveChipToPlayer(this, chipStats);
+            ChipStats.Find(c => c.ChipType == "G").GiveChipToPlayer(this);
 
             TakeChips = 0;
             EndTurn();
@@ -399,7 +404,7 @@ public class PlayerControl : MonoBehaviour
 
                 if (Physics.Raycast(ray, out ChipHit, ClickManager.CamRayLength, layerMask))
                 {
-                    ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(ClickManager.GetOnTurnPlayer());
+                    ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(ClickManager.GetOnTurnPlayer(), GetComponent<CardStats>());
                 }
 
                 else
@@ -409,7 +414,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
 
-        if (TakeChips == 0 && LimitChip < 3 && !LimitAction)
+        if (TakeChips == 0 && LimitChip < 4 && !LimitAction)
         {
             EndTurn();
         }

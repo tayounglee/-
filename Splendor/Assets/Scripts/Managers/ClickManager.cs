@@ -19,7 +19,6 @@ public class ClickManager : MonoBehaviour
     private void Awake()
     {
         ChipManager = GetComponent<ChipManager>();
-        p = GetComponent<PlayerControl>();
         CardMask = LayerMask.GetMask("CardMask");
         ChipMask = LayerMask.GetMask("ChipMask");
         ChipBundleMask = LayerMask.GetMask("ChipBundleMask");
@@ -85,7 +84,7 @@ public class ClickManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out CardHit, CamRayLength, CardMask))
             {
-                CardHit.transform.GetComponent<CardStats>().OnRightClick(GetOnTurnPlayer());
+                CardHit.transform.GetComponent<CardStats>().MouseRightClick(GetOnTurnPlayer());
             }
         }
     }
@@ -102,19 +101,13 @@ public class ClickManager : MonoBehaviour
             {
                 if (!GetOnTurnPlayer().ChipsTaken.Contains(ChipHit.transform.GetComponent<ChipStats>().ChipType))
                 {
-                    ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(GetOnTurnPlayer());
+                    ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(GetOnTurnPlayer(), GetComponent<CardStats>());
                 }
 
                 else
                 {
                     print("이미 같은타입의 칩을 가져갔습니다. 다른종류의 칩을 선택해주세요.");
                 }
-            }
-
-            else if(Physics.Raycast(ray, out ChipHit, CamRayLength, ChipBundleMask))
-            {
-                //ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(GetOnTurnPlayer());
-                print("공사중");
             }
         }
     }
@@ -130,7 +123,7 @@ public class ClickManager : MonoBehaviour
             {
                 if (ChipHit.transform.GetComponent<ChipStats>().ChipType != "Gold Chips")
                 {
-                    ChipHit.transform.GetComponent<ChipStats>().MouseRightClick(GetOnTurnPlayer());
+                    ChipHit.transform.GetComponent<ChipStats>().MouseRightClick(GetOnTurnPlayer(), GetComponent<CardStats>());
                 }
                 else
                 {
