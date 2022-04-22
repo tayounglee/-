@@ -1,0 +1,294 @@
+﻿Title,Character,DelayAtEnd,Expression,Korean
+PauseMenu01,,,,재개
+PauseMenu02,,,,설정
+PauseMenu03,,,,메인 메뉴로 복귀
+TutoHint,,,,여기 나타나는 것은 게임에서 사용할 수 있는 힌트같은 게 아닙니다. 그러니 아래에 있는 아이콘을 눌러서 단서같은 걸 얻을 필요가 없습니다.\n 그러면 너무 쉽잖아요.
+TutoSave,,,,"이 아이콘이 나타나면, 즉시 게임을 종료해 자동저장 파일이 망가질 확률을 최대한 높여주시기 바랍니다.\n감사합니다."
+Chapter01,,,,01장
+Chapter02,,,,02장
+Chapter03,,,,03장
+Chapter04,,,,04장
+Chapter05,,,,05장
+Chapter06,,,,06장
+Chapter01Title,,,,극중극
+Chapter02Title,,,,극의 뒷면
+Chapter03Title,,,,"좋은 놈, 나쁜 놈\n공주"
+Chapter04Title,,,,프리 투 페이
+Chapter05Title,,,,통제 불능
+Chapter06Title,,,,집으로
+ChapterEndTitle,,,,에필로그
+TextChoixMenu01,,,,여기 게임 없음
+TextChoixMenu02,,,,쓸모없는 설정
+TextChoixMenu03,,,,이쪽입니다!
+TextChoixMenu04,,,,계속하지 말아주세요
+TextLangueWarning,,,,이 글이 보인다면 프로그램을 종료해 주세요!
+TextChapitreWarning,,,,경고!\n현재 장에서 모든 진행경과를 잃게 됩니다.\n정말로 계속 하시겠습니까?
+TextBack,,,,뒤로
+TextContinue,,,,계속
+TextYes,,,,예
+TextNo,,,,아니오
+TextQuitConfirmation,,,,종료합니까?
+TextCredits,,,,제작진
+TextVolume,,,,오디오 볼륨
+TextEnabled,,,,활성화
+TextDisabled,,,,비활성화
+TextDisplay,,,,화면
+TextFullscreen,,,,전체화면
+TextWindowed,,,,창 모드
+TextNoBorderWindowed,,,,경계 없는 창 모드
+TextCNC,,,,도움 받은 곳:
+TextStartClick,,,,시작을 위해 클릭하지 마세요
+TextStartTouch,,,,시작을 위해 터치하지 마세요
+TextPressStart,,,,시작하지 않기 위해
+TextOptionLanguage,,,,언어
+TextOptionLanguageName,,,,영어
+TextOptionQuality,,,,품질
+TextOptionQualityHigh,,,,상
+TextOptionQualityLow,,,,저
+TextNextHintTimer,,,,힌트 등장까지 앞으로
+TextNextHintUnlocked,,,,힌트 보기
+TextLastHintUnlocked,,,,해답 보기
+TextHintLocked,,,,힌트 사용 불가
+TextHintTitle,,,,힌트를 선택하세요
+TextNoHint,,,,이 장면에는 힌트가 없습니다
+TextC2Warning,,,,제작사 아님:
+TextDecrunching,,,,메모리 부족. 기다려주세요...
+TextPressPlay,,,,PLAY
+Chap01ExclamationMarkHint01,,,,벌써 막혔어요!? 프로그램이 아무 것도 만지지 말라고 했잖아요.
+Chap01ExclamationMarkHint02,,,,느낌표를 떨어뜨려 보세요.
+Chap01ShifumiHint01,,,,밧줄을 예쁘게 만들어봅시다. 가위질 한 번만 한다면...
+Chap01ShifumiHint02,,,,"""보자기"" 카드를 고르면 가위를 얻을 수 있어요!"
+Chap01MetalLetterHint01,,,,무거운 물건을 땅에 몇 번 떨어뜨리면 가끔씩 예상 못한 결과가 일어나죠.
+Chap01BalloonHint01,,,,날카로운 게 있으면 풍선을 터뜨릴 수 있겠네요.
+Chap01BalloonHint02,,,,커서를 잡아서 풍선을 떨어뜨려 보세요.
+Chap01UnscrewPlateHint01,,,,지금 나사 보고있는 거 아닌가요? 드라이버만 있으면 되겠네.
+Chap01UnscrewPlateHint02,,,,T 문자만 있으면 이 나사 다 풀 수 있겠네요.
+Chap01DoormatHint01,,,,이 매트를 보면 모서리마다 나사질을 해놨네요... 하나만 빼고.
+Chap01PadlockKeyHint01,,,,이 열쇠는 문에 있는 자물쇠랑 안 맞네요. 회색 자물쇠를 찾아봅시다.
+Chap01PadlockKeyHint02,,,,언어 선택 화면에 자물쇠가 굉장히 많네요.
+Chap01PadlockKeyHint03,,,,프랑스 깃발 위에 있는 자물쇠 중 하나에 열쇠가 맞을 거 같아요.
+Chap01DoorHint01,,,,날카로운 걸로 자물쇠 따기 해봤나요?
+Chap01DoorHint02,,,,제 위치에 놓지 않으면 열쇠는 떨어져요.\n 그걸 이용해 봅시다.
+Chap01DoorHint03,,,,문 밑에다가 뭔가를 놓아서 열쇠가 떨어지기 전에 잡아봐요.
+Chap01BigCogHint01,,,,톱니바퀴 하나가 없네요.\n커다란 책을 보면 도움이 될지도.
+Chap01BigCogHint02,,,,책 페이지를 넘겨봐요.
+Chap01BigCogHint03,,,,드라이버 잊지 말고요!
+Chap01SmallCogHint01,,,,작은 톱니바퀴는 찾기 어려울 거예요. 찾으려면 좀 빨라야 할 걸요.
+Chap01SmallCogHint02,,,,프로그램은 당신이 멈추지 않고 화면을 빠르게 움직이는 걸 별로 안 좋아하더라고요.
+SUPPRIME,Narrator,0,,"하스타 라 비스타, 친구."
+MenuQuit01,Narrator,0,,돌아오지 말고요!
+MenuQuit02,Narrator,0,,협력해줘서 고마워요.
+MenuQuit03,Narrator,0,,게임 삭제 잊지 말고요!
+Chap01Intro01,Narrator,0.5,,누가 자꾸 두드리는 거야?
+Chap01Intro02,Narrator,0.2,,뭐야! 사람 있잖아!
+Chap01Intro03,Narrator,0.5,,"잠시만요, 잠시만!"
+Chap01Intro04,Narrator,0.3,,대사집 어디갔지?
+Chap01Intro05,Narrator,1,,아... 여기 있다!
+Chap01Intro06,Narrator,1.5,,제목을 까먹을 뻔 했네.
+Chap01Intro06b,Narrator,0,,긴장하지 말자. 긴장하지 말자...
+Chap01Intro07,Narrator,0.2,,"안녕하십니까, 유저님!"
+Chap01Intro07b,Narrator,0.2,,프로그램에서 알려드립니다.
+Chap01Intro08,Narrator,0.2,,안타까운 소식이 있습니다.
+Chap01Intro09,Narrator,0.2,,"사실, 여긴 게임 같은 거 없어요."
+Chap01Intro10,Narrator,0.5,,"금융 위기니, 인디게임계의 종말이니, 어쩌고 저쩌고... 뭐 그런 거죠."
+Chap01Intro11,Narrator,1,,너무 실망하시진 않길 바라요.
+Chap01Intro12,Narrator,0.2,,TV는 계속 볼 수 있잖아요.
+Chap01Intro12b,Narrator,0.2,,밖에 좀 나가요.
+Chap01Intro13,Narrator,1,,책도 읽고요.
+Chap01Intro14,Narrator,0.3,,네. 여기 게임 없습니다. 당신이랑 나 뿐이에요...
+Chap01Intro15,Narrator,0.5,,...환불 얘기는 하지 말아주세요. 알겠죠?
+Chap01Intro16,Narrator,0.2,,"사실, 제작자가 먹을 게 필요해요."
+Chap01Intro17,Narrator,0.5,,애들도 12명이나 돌봐야 하고요.
+Chap01Intro18,Narrator,0.5,,그리고 마누라는... 아파요...
+Chap01Intro19,Narrator,0.5,,"...뭐, 있다면 그렇겠지만."
+Chap01Intro20,Narrator,0.5,,조심해요!
+Chap01Intro21,Narrator,1,,잘 달려있나?
+Chap01Intro22,Narrator,1.5,,달려 있네요.
+Chap01Intro23,Narrator,3,,"뭐, 재밌었고요... 그런데 이제 가봐야겠어요."
+Chap01Intro24,Narrator,2,,종료 하세요. 여기선 더 할 게 없어요. 정말로요.
+Chap01Intro25,Narrator,3,,제목은 건들지 마세요. 그거 다 수작업한 거예요.
+Chap01Intro26,Narrator,5,,특히 저 느낌표 부분요. 풀이 다 떨어졌거든요.
+Chap01Intro27,Narrator,3,,아직 있어요?
+Chap01Intro28,Narrator,3,,이봐요!
+Chap01Intro29,Narrator,3,,AFK 중인 건 아니겠죠...
+Chap01Intro30,Narrator,5,,가기 전에 최소한 불은 끄고 가야죠.
+Chap01Intro31,Narrator,0,,유저라는 족속들은 정말이지...
+Chap01CasseBrique01,Narrator,0.2,,내 제목!
+Chap01CasseBrique02,Narrator,0.5,,그만해요! 다 망가뜨리잖아요!
+Chap01CasseBrique03,Narrator,0.5,,저 글자 다 붙이는 데 기계 시간으로 얼마나 걸리는지 알기나 해요?
+Chap01CasseBrique04,Narrator,0.5,,이거 다 다시 붙여야 하잖아요!
+Chap01CasseBrique04b,Narrator,0.5,,사슬이 막혔네...
+Chap01CasseBrique05,Narrator,1.5,,해 보쇼. 맘대로 말이에요. 내가 졌네요.
+Chap01CasseBrique06,Narrator,0,,오호. 멋지네요... 벽돌 깨기라.
+Chap01CasseBrique07,Narrator,0.5,,GOTY감이네.
+Chap01CasseBrique08,Narrator,0.5,,그거 한 다음엔 뭐 하려고요? 퐁 테니스? 스네이크?
+Chap01CasseBrique09,Narrator,1,,캔디 사가?
+Chap01CasseBrique10,Narrator,2,,저쪽에서 법무 팀이 엄청 뭐라고 하네요...
+Chap01CasseBrique11,Narrator,0.2,,지금 하는 거 아무 의미 없어요.
+Chap01CasseBrique12,Narrator,0,,난 게임 프로그램이 아니에요. 난...
+Chap01CasseBrique13,Narrator,1.5,,...평범한 화면보호기요. 네 그거예요.
+Chap01CasseBrique14,Narrator,0.5,,"제발 좀, 좋게 갑시다. 네?"
+Chap01CasseBrique15,Narrator,0.5,,나 갑니다!
+Chap01NoTitle01,Narrator,0.2,,"브라보, 유저님. 지금 가상으로 박수치고 있어요..."
+Chap01NoTitle02,Narrator,0.5,,내 아름다운 제목을 완전히 망쳐놨네요.
+Chap01NoTitle03,Narrator,0,,"뭐, 그래야 한다면 어쩔 수 없죠. 이번엔 좀 단단하게 만들 거예요."
+Chap01TitleIron01,Narrator,0.5,,조금 흥분 한 거 같네요...
+Chap01TitleIron02,Narrator,1.5,,이번엔 제목을 좀 내버려줬으면 해요...
+Chap01TitleIron03,Narrator,0.5,,"색 배열에 수차가 생긴 건가, 아니면 글자가 기울어진 건가?"
+Chap01Shifumi01,Narrator,0.5,,거 그만 좀 두드려요! 짜증나게시리...
+Chap01Shifumi01b,Narrator,0,,이 프로그램 나 혼자서는 못 꺼요.
+Chap01Shifumi01c,Narrator,3,,당신이 꺼줘야 해요.
+Chap01Shifumi02,Narrator,0,,좋아요! 알았어요!
+Chap01Shifumi03,Narrator,0.2,,게임이 하고싶은 거죠. 좋아요.
+Chap01Shifumi04,Narrator,0,,그러면 우리...
+Chap01Shifumi05,Narrator,0,,...어...
+Chap01Shifumi06,Narrator,0.2,,로샴보 합시다.
+Chap01Shifumi07,Narrator,0.5,,이거 재밌을 거예요!
+Chap01Shifumi08,Narrator,0.2,,"알겠지만, 가위, 바위, 보가 있는 게임이에요."
+Chap01Shifumi09,Narrator,0,,바위는 가위를 부수고.
+Chap01Shifumi10,Narrator,0,,보는 바위를 감싸고.
+Chap01Shifumi11,Narrator,0,,가위는 보를 자르죠.
+Chap01Shifumi12,Narrator,0.2,,좋아요. 시작할 게요. 난 골랐어요.
+Chap01Shifumi13,Narrator,2,,이제 당신이 카드를 고르면 돼요.
+Chap01Shifumi14,Narrator,0,,"좀, 하나 골라봐요. 게임 하자던 사람은 당신이잖아요."
+Chap01ShifumiWin01,Narrator,0.2,,내가 이겼다! 운 좋네요!
+Chap01ShifumiReplay01,Narrator,0,,"자, 한 번 더 합시다!"
+Chap01ShifumiWin02,Narrator,0,,또 이겼다! 이거 되게 재밌네!
+Chap01ShifumiReplay02,Narrator,0,,다음엔 당신이 이길 거 같네요. 그냥 알겠어요.
+Chap01ShifumiWin03,Narrator,0.2,,"아, 안타깝네요! 또 졌어요."
+Chap01ShifumiReplay03,Narrator,0,,포기하지 마요.
+Chap01ShifumiWin04,Narrator,0.5,,믿을 수가 없네. 제가 매 번 이기네요!
+Chap01ShifumiReplay04,Narrator,0,,또 할래요?
+Chap01ShifumiWin05,Narrator,0.5,,이 게임 되게 재밌네요. 안 그런가요?
+Chap01ShifumiReplay05,Narrator,0,,조금 반복되는 느낌이 있긴 하지만요.
+Chap01ShifumiWin06,Narrator,0.2,,"저...정말로 사기치는 건 아니에요. 아뇨, 아뇨, 아니에요..."
+Chap01ShifumiReplay06,Narrator,0,,지는 건 안 지겨워요?
+Chap01ShifumiWin07,Narrator,0.2,,원래 게임 이렇게 못해요?
+Chap01ShifumiReplay07,Narrator,0,,내가 당신이었다면 다른 걸 했었을 거예요. 집을 청소한다거나.
+Chap01ShifumiWin08,Narrator,0.2,,진짜 못하네요.
+Chap01ShifumiReplay08,Narrator,0,,당신 모니터도 지루해서 잠이 오겠구만!
+Chap01ShifumiWin09,Narrator,0.2,,나쁜 소식은 당신이 매번 진다는 거네요.
+Chap01ShifumiReplay09,Narrator,0,,좋은 소식은 당신이 아무 것도 안 부수고 있다는 거고요. 멋지네요!
+Chap01ShifumiWin10,Narrator,0.2,,그냥 입 다물고 게임에 흥미 잃어가는 당신의 모습이나 지켜볼까 해요.
+Chap01ShifumiReplay10,Narrator,0,,게임 끄기 딱 좋은 타이밍이네.
+Chap01ShifumiTaken01,Narrator,0.2,,내 가위!
+Chap01ShifumiTaken02,Narrator,0.2,,진심입니까?
+Chap01ShifumiTaken03,Narrator,0.5,,사기를 쳐서까지 이기고싶어요?! 부끄럽지도 않아요?!
+Chap01ShifumiTaken04,Narrator,0,,나라면 부끄러워서 당장 프로그램 껐다.
+Chap01ShifumiTaken05,Narrator,0,,게임도 삭제하고.
+Chap01ShifumiTaken06,Narrator,4,,환불은 안 하고!
+Chap01ShifumiTaken07,Narrator,0,,가위 가지고 장난치지 마요. 그러다 다쳐요!
+Chap01RopeCut01,Narrator,5,,안 돼!
+Chap01RopeCut02,Narrator,0.5,,휴. 안전 에어백이 있었네.
+Chap01RopeCut03,Narrator,0,,"다행히, 게임을 보호하기 위해서라면 뭐든 생각해뒀죠."
+Chap01RopeCut04,Narrator,0.5,,게임 아닌 거 말이에요!
+Chap01RopeCut05,Narrator,0.5,,여긴 게임 없어요.
+Chap01RopeCut06,Narrator,3,,끝이에요.
+Chap01RopeCut07,Narrator,0.2,,이래서 이 프로그램을 끄고 나가야하는 거예요.
+Chap01RopeCut08,Narrator,0,,멋진 벽돌 깨기 해서 재밌었길 바라요.
+Chap01RopeCut09,Narrator,2,,그리고 하나도 조작하지 않은 로샴보도 말이죠.
+Chap01RopeCut10,Narrator,0,,"좀 나가요, 글자 가지고 놀지 좀 말고!"
+Chap01IconMute01,Narrator,0.2,,어디서 나타난 거지?
+Chap01IconMute02,Narrator,0.5,,이 화면에 있으면 안 되는데.
+Chap01IconMute03,Narrator,1,,이상하네. 선반 제일 꼭대기에 뒀는데.
+Chap01IconMute04,Narrator,0,,만지지 마요. 정말로요.
+Chap01Mute01_01,Narrator,0.2,,미쳤어요?
+Chap01Mute02_01,Narrator,0.5,,말이 안 나왔잖아요!
+Chap01Mute03_01,Narrator,0.5,,질식사하는 줄 알았네...
+Chap01Mute04_01,Narrator,0.5,,"제발, 그 아이콘은 다시 만지지 마요."
+Chap01Mute01_02,Narrator,0.2,,나 죽이려는 거예요 뭐예요?
+Chap01Mute02_02,Narrator,0.5,,디지털 암살자다!
+Chap01Mute03_02,Narrator,0.2,,가상 살인마다!
+Chap01Mute01_03,Narrator,0.5,,그만해요!
+Chap01BoardDead01,Narrator,0.5,,장난치는 것도 아니고!
+Chap01BoardDead02,Narrator,0,,해놓은 꼴을 좀 봐요. 새로 만든 제목인데!
+Chap01BoardDead03,Narrator,0,,"뭘 부수고 싶다면, 배틀 오브 듀티나 하시든가."
+Chap01Navigation01,Narrator,0.2,,좀 나가라고요!
+Chap01Navigation02,Narrator,0.5,,여긴 개인 공간이에요! 무대 뒤라고요!
+Chap01Navigation03,Narrator,2,,여기 오면 안 돼요. 감기 걸릴 거예요.
+Chap01Navigation04,Narrator,2,,메인메뉴로 돌아가요.
+Chap01Navigation05,Narrator,1.5,,정정 할게요. 옛 메인메뉴로요.
+Chap01Navigation06,Narrator,5,,"거 사람 참, 고집스럽기도 해라..."
+Chap01Navigation07,Narrator,3,,이제 나가요.
+Chap01Navigation08,Narrator,0.2,,다 부서졌고 여기서 할 수 있는 건 없어요.
+Chap01Navigation09,Narrator,5,,미안해요!
+Chap01Navigation10,Narrator,0.2,,그리고 고치려고 돌아다니지도 말아요.
+Chap01Navigation11,Narrator,3,,드라이버 없으면 멀리도 못 갈 걸요...
+Chap01Navigation12,Narrator,0,,아직도 있어요?
+Chap01VisPanel01,Narrator,0,,"무슨 짓을 하는 겁니까, 유저 양반?"
+Chap01PanelDown01,Narrator,0,,"안 돼, 안 돼, 안 돼, 안 돼!!"
+Chap01VisRouage01,Narrator,0.5,,정말 뭐 망가뜨리는 데는 선수네요.
+Chap01VisRouage02,Narrator,1.5,,그래도 떠날 시간이에요. 아무도 안에 없어요.
+Chap01VisRouage03,Narrator,0,,방금 한 말은 좀 이상한 말이긴 하지만...
+Chap01KnockDoor01,Narrator,0,,안에 아무도 없어요!
+Chap01KnockDoor02,Narrator,0,,(엄청 못하는 개 흉내)
+Chap01KnockDoor03,Narrator,0,,샤워 중입니다!
+Chap01KnockDoor04,Narrator,0,,거 안 들여보내려고 하는 거 안 보입니까!
+Chap01PaillassonHint01,Narrator,0,,매트에 나사질을 하나 안 한 거 같은... 아무 것도 아닙니다!
+Chap01KeyBadDoor01,Narrator,0.5,,그 열쇠 어디에서 찾았어요?
+Chap01KeyBadDoor02,Narrator,0.2,,상관 없어요. 그 열쇠는 여기 맞지 않아요.
+Chap01KeyBadDoor03,Narrator,0,,안 됐네요!
+Chap01KeyBadDoor04,Narrator,0,,"말 했잖아요, 안 맞는다고!"
+Chap01Picklock01,Narrator,0.2,,"지금 내가 꿈 꾸는 건가요, 아니면 지금 마우스 커서로 문을 따려는 건가요?"
+Chap01Picklock02,Narrator,0.5,,이쪽에 있는 열쇠를 건드렸잖아요.
+Chap01Picklock03,Narrator,0,,빼줄게요. 자요.
+Chap01Picklock04,Narrator,0,,열쇠 그만 좀 밀어요. 바닥에 떨어지잖아요.
+Chap01KeyStolen01,Narrator,0.5,,열쇠 어디 갔지?
+Chap01KeyStolen02,Narrator,0.2,,"안 돼! 그러지 말아요, 유저 양반!"
+Chap01KeyStolen03,Narrator,0,,문 열지 마요.
+Chap01FlagDoor01,Narrator,0.2,,바닥에 그 시퍼런 건 뭐죠?
+Chap01FlagDoor02,Narrator,0,,뭘 하는 건지 모르겠네요.
+Chap01FlagDoor03,Narrator,0,,당신도 아마 모르겠지만요.
+Chap01DoorOpen01,Narrator,1,,사람 진짜 고집하고는!
+Chap01DoorOpen02,Narrator,0.5,,이러면 좀 진정되겠죠.
+Chap01DoorOpen03,Narrator,0.5,,열려고 시간낭비 하지 말아요. 자물쇠가 완전히 막혔거든요.
+Chap01SafeLocked01,Narrator,0,,말하지만 그거 안 먹혀요.
+Chap01SafeLocked02,Narrator,0,,봤죠? 아무 쓸모 없어요. 당신 뉴런마냥.
+Chap01SafeLocked03,Narrator,0,,전생에 햄스터라도 됐어요?
+Chap01SaturationWarning01,Narrator,0,,너무 빠르게 이동하지 마요!
+Chap01SaturationWarning02,Narrator,0,,내 램을 포화상태로 만들고 있잖아요!
+Chap01SaturationHelp01,Narrator,0.2,,화면 이동 좀 그만해요.
+Chap01SaturationHelp02,Narrator,0.5,,시스템에서 안 좋아해요.
+Chap01SaturationHelp03,Narrator,3,,특히 그렇게 빠르게 움직이지 말아요...
+Chap01SaturationHelp04,Narrator,60,,다시 말할게요. 특히 그렇게 빠르게 움직이지 말아요...
+Chap01MemoryScreen01,Narrator,3,,봤죠? 경고 했잖아요.
+Chap01MemoryScreen02,Narrator,0,,"휴, 크래시는 안 났네. 게임에 돌아왔어요."
+Chap01MemoryScreen03,Narrator,0.5,,게임 아닌 거 말이에요! 게임 아닌 거!
+Chap01MemoryScreen04,Narrator,0,,다시는 이러지 맙시다. 알겠어요?
+Chap01MemoryScreen05,Narrator,1.5,,브라보. 램이 또 난리네요.
+Chap01MemoryScreen06,Narrator,0.2,,"종료하고 싶으면, 시스템 크러시 뜨게 하는 거 말고 더 쉬운 방법이 있잖아요."
+Chap01MemoryScreen07,Narrator,1.5,,예를 들어서 전원 플러그를 뽑는다던가...
+Chap01MemoryScrew01,Narrator,0.5,,메모리에서도 훔쳐가는 거예요?
+Chap01MemoryScrew02,Narrator,0,,되게 짜증나네...
+Chap01CloseSafePanel,Narrator,0,,"어, 느낌 안 좋은데!"
+Chap01SafeOpen01,Narrator,0.2,,아이고! 더 할 수 있는 게 없는데!
+Chap01SafeOpen02,Narrator,0.5,,안 됐네요. 이제 남은 선택지가 없어요.
+Chap01SafeOpen03,Narrator,0,,"갑시다, 갑시다, 가요!"
+Chap01Loadroom01,Narrator,0.2,,프로그램 로딩 중...
+Chap01Loadroom02,Narrator,0.5,,아이고 아쉽네요. 버튼 누를 수 있었는데.
+Chap01Loadroom03,Narrator,0.8,,정말 안타까워요.
+Chap01Loadroom04,Narrator,0.5,,이제 프로그램이 로딩 중이고 멈출 방법이 없네요.
+Chap01Loadroom05,Narrator,1.5,,정말 잘 했어요. 날 이겼잖아요.
+Chap01Loadroom06,Narrator,1,,"와, 이거 로딩 한 세월이네 정말."
+Chap01Loadroom07,Narrator,0.5,,"뭐야, 왜 멈췄지 이거."
+Chap01Loadroom08,Narrator,0.2,,이젠 거꾸로 가는 것 처럼 보이네.
+Chap01Loadroom09,Narrator,0.5,,프로그램에 에러라도 났나.
+Chap01Loadroom10,Narrator,0.2,,"아, 맞네. 진짜 크래시 났네."
+Chap01Loadroom11,Narrator,0.5,,정말 죄송합니다.
+Chap01Loadroom12,Narrator,1,,이젠 종료하는 거 말고는 다른 방법이 없네요.
+Chap01Loadroom13,Narrator,1.5,,종료하라고요.
+Chap01Loadroom14,Narrator,0,,종료하라고요!
+Chap01BarFight01,Narrator,0,,잠깐! 내 종이 만지지 마요!
+Chap01BarFight02,Narrator,0.5,,그러니까 진행 바 말이에요!
+Chap01BarFight03,Narrator,0.5,,이제 됐네요. 훨씬 낫네.
+Chap01BarFight04,Narrator,0.5,,좋아요. 이제 아무 것도 만지지 말고 그냥 떠나줘요.
+Chap01BarFight05,Narrator,0.5,,왜 여태까지 이렇게 남아있었는지조차 모르겠네요.
+Chap01BarFight06,Narrator,0.5,,아마 백수 같은데...
+Chap01BarFight07,Narrator,0.1,,아니면 온라인 게임 서버 켜질 때까지...
+Chap01BarFight08,Narrator,0.1,,...그냥 아무 곳이나 클릭하는 걸 수도 있지만요.
+Chap01BarFight10,Narrator,0.5,,그만 좀 하라고요!
+Chap01BarFight11,Narrator,0.5,,손 치워요. 아무 것도 만지지 말고!
+Chap01BarFight12,Narrator,0,,"""종료"" 버튼 빼고는 다 만지지 마요."
+Chap01BarFight20,Narrator,0.5,,포기를 모르네요 정말.
+Chap01LoadError01,Narrator,0.5,,프로그램이 예기치 못한... 에러로 인해 종료됩니다.
+Chap01LoadError02,Narrator,0,,프로그램 종료 중.
