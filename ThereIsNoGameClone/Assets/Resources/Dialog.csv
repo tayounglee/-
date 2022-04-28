@@ -3,6 +3,7 @@ PauseMenu01,,,,재개
 PauseMenu02,,,,설정
 PauseMenu03,,,,메인 메뉴로 복귀
 TutoHint,,,,여기 나타나는 것은 게임에서 사용할 수 있는 힌트같은 게 아닙니다. 그러니 아래에 있는 아이콘을 눌러서 단서같은 걸 얻을 필요가 없습니다.\n 그러면 너무 쉽잖아요.
+end,,,,
 TutoSave,,,,"이 아이콘이 나타나면, 즉시 게임을 종료해 자동저장 파일이 망가질 확률을 최대한 높여주시기 바랍니다.\n감사합니다."
 Chapter01,,,,01장
 Chapter02,,,,02장
@@ -292,3 +293,4 @@ Chap01BarFight12,Narrator,0,,"""종료"" 버튼 빼고는 다 만지지 마요."
 Chap01BarFight20,Narrator,0.5,,포기를 모르네요 정말.
 Chap01LoadError01,Narrator,0.5,,프로그램이 예기치 못한... 에러로 인해 종료됩니다.
 Chap01LoadError02,Narrator,0,,프로그램 종료 중.
+end,,,,
