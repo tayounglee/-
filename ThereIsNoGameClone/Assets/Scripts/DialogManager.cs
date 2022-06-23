@@ -6,6 +6,7 @@ using System;
 
 public class DialogManager : MonoBehaviour
 {
+    
     public Text dialog;
 
     float setTime;
@@ -20,7 +21,8 @@ public class DialogManager : MonoBehaviour
     void Start()
     {
         setTime = 0;
-        i = 87;
+        //i = 87;
+        i = 101;
         ReadDialog();
     }
 
@@ -34,7 +36,10 @@ public class DialogManager : MonoBehaviour
             i += 1;
             dialog.text = (data[i]["Korean"].ToString());
             setTime = 0;
-            
+            if(i == 103)
+            {
+                ObjectManager.instance.isWatchout = true;
+            }
         }
     }
 }

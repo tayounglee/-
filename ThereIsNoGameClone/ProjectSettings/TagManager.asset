@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Roof
+  - Left Wall
+  - Right Wall
+  - Floor
+  - Floor2
+  - Roof2
   layers:
   - Default
   - TransparentFX
@@ -11,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ball_Rebond
+  - Excla
   - 
   - 
   - 
