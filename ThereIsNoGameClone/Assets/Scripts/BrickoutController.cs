@@ -5,55 +5,54 @@ using UnityEngine;
 public class BrickoutController : MonoBehaviour
 {
     ClickManager clickManager;
-    public bool isBrickout;
+    public static bool isBrickout;
+    public static bool isMyTitle;
     Rigidbody2D rb2d;
-    float direction;
-
+    Vector2 direction;
+    Vector2 lastVelocity;
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Vector2 dir = collision.transform.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        Debug.Log(angle);
-        Vector2 incomingVector = dir;
-        incomingVector = incomingVector.normalized;
-        Vector2 normalVector = collision.contacts[0].normal;
-        Vector2 reflectVector = Vector2.Reflect(incomingVector, normalVector);
-        Debug.Log(reflectVector);
-        dir = reflectVector.normalized;
-
-        switch (collision.collider.tag)
+        if(collision.gameObject.tag == "Border" || collision.gameObject.tag == "Title")
         {
-                case "Floor":
-                    rb2d.velocity = new Vector2(rb2d.velocity.x, 5f);
-                    break;
-                case "Floor2":
-                    break;
-                case "Roof":
-                    rb2d.velocity = new Vector2(rb2d.velocity.x, 5f);
-                    break;
-                case "Roof2":
-                    break;
-                case "Left Wall":
-                    //direction = 2f;
-                    break;
-                case "Right Wall":
-                    //direction = -2f;
-                    break;
-                default:
-                    break;
+            Vector2 normal = collision.contacts[0].normal;
+            Vector2 velocity = lastVelocity;
+            Vector2 velocityNormal = velocity.normalized;
+            rb2d.velocity = Vector2.Reflect(velocityNormal, normal) * velocity.magnitude;
+            if(collision.gameObject.tag == "Title")
+            {
+                Vector2 dir = transform.position - collision.transform.position;
+                float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+                if(angle >=0 && angle <= 90)
+                {
+                    collision.transform.localPosition += new Vector3(0, -1, 0);
+                }
+                else if(angle > 90 && angle <= 180)
+                {
+                    collision.transform.localPosition += new Vector3(0, -1, 0);
+                }
+                else if(angle < 0 && angle >= -90)
+                {
+                    collision.transform.localPosition += new Vector3(0, 1, 0);
+                }
+                else if(angle < -90 && angle >= -180)
+                {
+                    collision.transform.localPosition += new Vector3(0, 1, 0);
+                }
+            }
         }
     }
 
 
     void Awake()
     {
+        isMyTitle = false;
         isBrickout = false;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        direction = -2f;
         clickManager = GetComponent<ClickManager>();
         rb2d = GetComponent<Rigidbody2D>();
     }
@@ -61,16 +60,39 @@ public class BrickoutController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (clickManager.TriggerCount == 1)
+        lastVelocity = GetComponent<Rigidbody2D>().velocity;
+        direction = rb2d.velocity;
+
+        if (clickManager.TriggerCount == 1 && name == "TitleCube_Ball_Rebond")
         {
             isBrickout = true;
+            isMyTitle = true;
             clickManager.enabled = false;
+            direction.x = -2f;
         }
 
         if(isBrickout && gameObject.name == "TitleCube_Ball_Rebond")
         {
-            //transform.position *= dir * speed * Time.deltaTime;
-            rb2d.velocity = new Vector2(direction, rb2d.velocity.y);
+            if(clickManager.TriggerCount == 1)
+            {
+                rb2d.velocity = direction;
+            }
+            
+            if (rb2d.velocity.x > 0 && rb2d.velocity.x <= 2)
+            {
+                direction.x = 2f;
+            }
+            if (rb2d.velocity.x <= 0 && rb2d.velocity.x >= -2)
+            {
+                direction.x = -2f;
+            }
+            rb2d.velocity = direction;
         }
+
+        if (isBrickout && gameObject.name == "TitleCube_Excla")
+        {
+            enabled = false;
+        }
+
     }
 }
