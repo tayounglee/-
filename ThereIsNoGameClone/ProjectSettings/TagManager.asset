@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Roof
-  - Left Wall
-  - Right Wall
   - Floor
-  - Floor2
-  - Roof2
+  - Border
+  - Title
+  - Excla
   layers:
   - Default
   - TransparentFX
@@ -19,7 +17,7 @@ TagManager:
   - UI
   - Ball_Rebond
   - Excla
-  - 
+  - Title
   - 
   - 
   - 

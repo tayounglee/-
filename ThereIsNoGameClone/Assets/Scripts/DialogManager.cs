@@ -6,10 +6,9 @@ using System;
 
 public class DialogManager : MonoBehaviour
 {
-    
     public Text dialog;
 
-    float setTime;
+    public static float setTime;
     int i;
     List<Dictionary<string, object>> data;
 
@@ -28,18 +27,37 @@ public class DialogManager : MonoBehaviour
 
     void Update()
     {
-        //dialog.text = data[50]["Korean"].ToString();
-        
         setTime += Time.deltaTime;
         if (setTime > 3)
         {
+            if (BrickoutController.isBrickout && BrickoutController.isMyTitle)
+            {
+                i = 114;
+                setTime = 4;
+                BrickoutController.isMyTitle = false;
+            }
+
             i += 1;
             dialog.text = (data[i]["Korean"].ToString());
             setTime = 0;
-            if(i == 103)
+            switch (i)
             {
-                ObjectManager.instance.isWatchout = true;
+                case 103:
+                    ObjectManager.instance.isWatchout = true;
+                    break;
+                case 108:
+                    setTime = -20;
+                    break;
+                case 113:
+                    i = 108;
+                    setTime = -20;
+                    break;
+                case 129:
+                    setTime = -9999999999999999;
+                    break;
             }
+            
+            
         }
     }
 }

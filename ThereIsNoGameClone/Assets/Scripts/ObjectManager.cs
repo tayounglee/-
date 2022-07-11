@@ -13,6 +13,7 @@ public class ObjectManager : MonoBehaviour
 
     public static ObjectManager instance;
     public bool isWatchout;
+    //public bool isBrickout;
     bool isShake;
     
     //ObjectManager Title;
@@ -29,6 +30,7 @@ public class ObjectManager : MonoBehaviour
         instance = this;
         isWatchout = false;
         isShake = true;
+        //isBrickout = false;
         //Title = FindObjectOfType<ObjectManager>();
     }
 
