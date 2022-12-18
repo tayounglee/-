@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4532643464161355344}
   - component: {fileID: 2036534659914551916}
   - component: {fileID: -4121400952397140215}
-  - component: {fileID: 8357435710516248260}
   m_Layer: 10
   m_Name: Emerald Chip
   m_TagString: Untagged
@@ -128,21 +127,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 
---- !u!114 &8357435710516248260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3250084562122834089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48211c6027416ac4c8f8d8052857d93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChipType: 
-  ChipCount: 0
-  Chips: []
-  ChipBox: []
-  chipType: {fileID: 0}
-  IsBooked: 0

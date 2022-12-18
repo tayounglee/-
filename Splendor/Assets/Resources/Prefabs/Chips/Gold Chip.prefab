@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4141093893784006725}
   - component: {fileID: 6827511409260044107}
   - component: {fileID: -5511900365527045824}
-  - component: {fileID: 8247049063283428348}
   m_Layer: 10
   m_Name: Gold Chip
   m_TagString: Untagged
@@ -128,21 +127,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 
---- !u!114 &8247049063283428348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909223908355504959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48211c6027416ac4c8f8d8052857d93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChipType: 
-  ChipCount: 0
-  Chips: []
-  ChipBox: []
-  chipType: {fileID: 0}
-  IsBooked: 0
