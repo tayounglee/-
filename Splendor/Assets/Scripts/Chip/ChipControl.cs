@@ -53,6 +53,7 @@ public class ChipControl : MonoBehaviour
     public void MoveTo(Transform destination)
     {
         gameObject.GetComponent<Rigidbody>().useGravity = false;
+        Physics.IgnoreLayerCollision(10, 10, true);
         ChangeTransform(destination);
         EnableMove = true;
     }

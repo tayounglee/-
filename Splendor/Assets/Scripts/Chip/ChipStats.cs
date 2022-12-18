@@ -78,7 +78,6 @@ public class ChipStats : MonoBehaviour
     {
         Chips[ChipCount - 1].GetComponent<ChipControl>().MoveToPlayer(Player);
         Player.AddChip(Chips[ChipCount - 1]);
-        //ChipBox.Add(Chips[ChipCount - 1]);
         Chips.RemoveAt(ChipCount - 1);
         ChipCount--;
     }

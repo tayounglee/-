@@ -101,6 +101,13 @@ public class PlayerControl : MonoBehaviour
 
     public void EndTurn()
     {
+            if (LimitChip >= 11)
+            {
+                LimitAction = true;
+                print("칩을 11개 이상 소지할 수 없습니다.");
+                print("반환할 칩을 선택해주세요.");
+                //PayChips(card);
+            }
             ChipManager.UpdatePlayer(this.name);
             TakeChips = 3;
             ChipsTaken.Clear();
@@ -311,13 +318,6 @@ public class PlayerControl : MonoBehaviour
             SelectChips = true;
 
             print("칩 한개를 선택하셨습니다.");
-
-            if (LimitChip >= 3)
-            {
-                LimitAction = true;
-                print("칩을 3개 이상 소지할 수 없습니다.");
-                print("반환할 칩을 선택해주세요.");
-            }
         }
 
         else
@@ -404,7 +404,7 @@ public class PlayerControl : MonoBehaviour
 
                 if (Physics.Raycast(ray, out ChipHit, ClickManager.CamRayLength, layerMask))
                 {
-                    ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(ClickManager.GetOnTurnPlayer(), GetComponent<CardStats>());
+                    //ChipHit.transform.GetComponent<ChipStats>().MouseLeftClick(ClickManager.GetOnTurnPlayer(), GetComponent<CardStats>());
                 }
 
                 else
@@ -414,7 +414,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
 
-        if (TakeChips == 0 && LimitChip < 4 && !LimitAction)
+        if (TakeChips == 0 && LimitChip < 11 && !LimitAction)
         {
             EndTurn();
         }
